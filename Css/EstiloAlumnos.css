@@ -1,0 +1,91 @@
+/* Titulo de la página con logo y sub, más lema */
+header {
+    background-color: #4E598C;
+    color: #F9C784;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ff8c42;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(100, 34, 4, 0.3);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-title {
+    font-family: "PT Serif", serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #F9C784;
+    padding: 20px 0;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(85, 52, 3, 0.616);
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-title:hover {
+    transform: scale(1.1);
+}
+
+.header-subtitle {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+/* Estilos para la barra de navegación */
+nav a {
+    background-color: #e5b532;
+    color: #4E598C;
+    text-decoration: none;
+    border-right: 2px solid #F9C784;
+    padding: 0 20px;
+    margin-right: 5px;
+}
+
+
+/* Estilos para el main */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para las cajas en el grid */
+.grid-item {
+    background-color: #fff;
+    border: 2px solid orange;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s; /* Transición para la animación de crecimiento */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilos para los títulos en las cajas */
+.grid-item h3 {
+    margin: 0;
+}
+
+/* Estilos para la animación de crecimiento al pasar el cursor */
+.grid-item:hover {
+    transform: scale(1.05); /* Aumentar el tamaño al 5% al pasar el cursor */
+}
+
+
+
